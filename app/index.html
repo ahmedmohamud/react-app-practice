@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAL SCORE APP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>        
+</head>
+<body>
+
+
+    <div class="nav-bar">
+        <h2 class="title">GOAL-SCORE-APP</h2>
+    </div>
+<div class="container">
+
+   <div class="manchester">
+    <img src="./Manchester_City_FC_badge.svg.png" alt="">
+    <div class="manchester-text">Manchester City</div>
+    <div class="manchester-goal" id="goal1">0</div>
+    <button class="manchester-btn-goal" onclick="ManchesterGoal()">Goal</button>
+    <div class="manchester-foul" id="foul1">0</div>
+    <button class="manchester-foul-btn"onclick="manchesterFoul()">Foul</button>
+   </div>
+
+<div class="vl"></div>
+    <div class="liverpool">
+        <img src="./liverpool.jfif" alt="">
+
+        <div class="liverpool-text">Liverpool</div>
+        <div class="liverpool-goal" id="goal2">0</div>
+        <button class="liverpool-btn-goal" onclick="liverpoolGoal()">Goal</button>
+        <div class="liverpool-foul" id="foul2">0</div>
+        <button class="liverpool-foul-btn" onclick="liverpoolFoul()">Foul</button>
+
+    </div>
+  
+
+</div>
+<button class="reset-btn" id="resetGoal" onclick="reset()">Reset</button>
+</body>
+</html>

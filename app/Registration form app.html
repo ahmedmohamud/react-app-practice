@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+  body {padding: 30px}
+</style>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+        <div class="jumbotron">
+            <form action="registration form">
+            <label for="userName">user name</label>
+        <input type="text" class="form-control username"><br><br>
+
+        <label for="password">password</label>
+        <input type="text" class="form-control password"><br><br>
+
+        <label for="email">email</label>
+        <input type="text" class="form-control email"><br>
+
+        <p>username: <span class = "user"></span></p>
+        <p>Password: <span class = "pass"></span></p>
+        <p>Email: <span class = "ema"></span></p>
+        </form>
+        </div>
+        </div>
+    
+  <script>
+      const userName = document.querySelector('.username');
+      const password = document.querySelector('.password');
+      const email = document.querySelector('.email');
+
+      const gdisplayUser = document.querySelector('.user')
+      const displayPassword = document.querySelector('.pass')
+      const displayEmail = document.querySelector('.ema')
+
+      function showResults(){
+          const myUserName = userName.value;
+          displayUser.innerText = myUserName;
+
+          const myPassword = password.value;
+          displayPassword.innerText = myPassword;
+
+          const myEmail = email.value;
+          displayEmail.innerText = myEmail;
+      }
+      userName.addEventListener('input', showResults)
+      password.addEventListener('input', showResults)
+      email.addEventListener('input', showResults)
+    
+  </script>
+  
+</body>
+</html>
